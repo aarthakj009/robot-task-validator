@@ -4,7 +4,7 @@ from validator import validate_task
 def test_valid_task():
     result = validate_task("red_ball", "pick", "bin_a")
 
-    assert result["valid"] is False
+    assert result["valid"] is True
     assert "Task accepted" in result["message"]
 
 
